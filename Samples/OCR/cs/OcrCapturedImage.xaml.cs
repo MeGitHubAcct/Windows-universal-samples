@@ -42,7 +42,7 @@ namespace SDKTemplate
         // Language for OCR.
         private Language ocrLanguage = new Language("en");
 
-        // Recognized words ovelay boxes.
+        // Recognized words overlay boxes.
         private List<WordOverlay> wordBoxes = new List<WordOverlay>();
 
         // Receive notifications about rotation of the UI and apply any necessary rotation to the preview stream.     
@@ -75,7 +75,7 @@ namespace SDKTemplate
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
-        /// Ckecks if English language is avaiable for OCR on device and starts camera preview..
+        /// Checks if English language is available for OCR on device and starts camera preview..
         /// </summary>
         /// <param name="e"></param>
         protected override async void OnNavigatedTo(NavigationEventArgs e)
@@ -109,7 +109,7 @@ namespace SDKTemplate
         }
 
         /// <summary>
-        /// Occures on app suspending. Stops camera if initialized.
+        /// Occurs on app suspending. Stops camera if initialized.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -129,7 +129,7 @@ namespace SDKTemplate
         }
 
         /// <summary>
-        /// Occures on app resuming. Initializes camera if available.
+        /// Occurs on app resuming. Initializes camera if available.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="o"></param>
@@ -145,7 +145,7 @@ namespace SDKTemplate
         }
 
         /// <summary>
-        /// Occures when display orientation changes.
+        /// Occurs when display orientation changes.
         /// Sets camera rotation preview.
         /// </summary>
         /// <param name="sender"></param>
@@ -308,7 +308,7 @@ namespace SDKTemplate
         }
 
         /// <summary>
-        /// Occures when displayed image size changes.
+        /// Occurs when displayed image size changes.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

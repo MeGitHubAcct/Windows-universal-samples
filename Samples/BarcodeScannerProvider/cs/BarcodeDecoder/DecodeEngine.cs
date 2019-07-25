@@ -44,8 +44,8 @@ namespace BarcodeDecoder
     // Simple OCR-based decoder engine.
     internal class DecodeEngine
     {
-        private OcrEngine ocrEngine = null;
-        private static ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+        private readonly OcrEngine ocrEngine = null;
+        private readonly static ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
         public List<uint> SupportedSymbologies { get; private set; }
         public List<uint> ActiveSymbologies { get; set; }
